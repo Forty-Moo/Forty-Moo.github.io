@@ -1,0 +1,16 @@
+body {
+	  background-color: #CCFFFF;	
+	}
+	
+header {
+    background-color: #CCFFFF;
+    background-image: url("cow4.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 224px;
+	width: 1150px;
+	background-position: 1cm 0cm;
+}	
+	
+
+	
