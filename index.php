@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	  <title>Forty-Two Forty-Moos!</title>
@@ -12,7 +12,7 @@
 
 
 <body>
-<hr />
+<?php include('navi.php'); ?>
 <p><a href="Seiten/seite1.html">Zur Seite 1</a></p>
 </body>
 
