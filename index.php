@@ -12,7 +12,7 @@
 
 
 <body>
-<?php include('navi.php'); ?>
+<?php include("navi.php"); ?>
 <p><a href="Seiten/seite1.html">Zur Seite 1</a></p>
 </body>
 
