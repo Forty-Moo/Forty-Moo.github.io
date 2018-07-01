@@ -6,14 +6,18 @@ header {
 	margin: 0px 0px 0px 0px;
     padding: 5px 0px 0px 0px; 
     background-color: #d0e2e2;
-    background-image: url("cow4.png");
+    background-image: url("cow-header-new.png");
 	background-repeat: no-repeat;
-	height: 224px;
+	height: 220px;
 	width: 100%;
-	background-position: 1cm 0cm;
+	background-position: top right;
 	border-style: hidden;
 	border-radius: 10px;
-	
+}
+
+header img {
+    padding: 20px 5px;
+	height: 180px;
 }
 
 ul.nav {
@@ -29,6 +33,34 @@ ul.nav {
 li.nav {
     float: left;
 	border-right: 3px solid #d9d9d9;
+}
+
+@media screen and (max-width: 1220px) {		/*responsive Layout: Navigationsbar*/
+    li.nav{
+        float: none;
+        width: 100%;
+		border:none;
+    }
+	
+	header{
+	background-image:none;
+	}
+	
+}
+
+@media screen and (max-width: 850px) {
+	header {
+	height: 70px;
+	}
+
+	header img {
+	display:block;
+	padding: 0px 0px;
+	margin-left: auto;
+    margin-right: auto;
+	width:220px;
+	height:60px;
+	}
 }
 
 li.nav a {
