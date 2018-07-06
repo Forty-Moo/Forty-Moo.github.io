@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-	  background-color: #eff5f5;	
+	font-family: Arial;
+	background-color: #eff5f5;	
 	}
 	
 header {
@@ -16,7 +21,7 @@ header {
 }
 
 header img {
-    padding: 20px 5px;
+    padding: 5px 5px;
 	height: 180px;
 }
 
@@ -35,7 +40,7 @@ li.nav {
 	border-right: 3px solid #d9d9d9;
 }
 
-@media screen and (max-width: 1220px) {		/*responsive Layout: Navigationsbar*/
+@media screen and (max-width: 1300px) {		/*responsive Layout: Navigationsbar*/
     li.nav{
         float: none;
         width: 100%;
@@ -78,7 +83,158 @@ li.nav a:hover:not(.active) {
 li.nav a.active {
     color: white;
     background-color: #99b3e6;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn{   
+    float: left;
+    width: 75%;
+	padding-left:50px;
+}
+
+/* Right column */
+.rightcolumn{
+    float: left;
+    width: 25%;
+	padding-left:50px;
+	padding-right:5px;
 }	
+
+/* Add a card effect for articles on the LEFT */
+.card{
+    background-color: #d0e2e2;
+	border: 3px solid #e7e7e7;
+	border-radius:10px;
+    padding: 20px 60px;
+    margin-top: 20px;
+}
+
+.card p{
+font-size:25px;
+}
+
+/* Add a card effect for articles on the RIGHT */
+.card2{
+    background-color: #d0e2e2;
+	border: 3px solid #e7e7e7;
+	border-radius:10px;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+.card2 p{
+font-size:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 1300px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1300px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+	.card {
+	padding:5px;
+	margin-top:10px;
+	}
+	.card2 {
+	padding:5px;
+	margin-top:10px;
+	}
+}
+
+/*Sidebar-Navigation and interactive lists*/
+
+ul.stil1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 2px solid #e7e7e7;
+	border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+li.stil1 {
+border-bottom: 2px solid #e7e7e7;
+}
+
+li.stil1:last-child {
+border-bottom: none;
+}
+
+li.stil1 a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+li.stil1 a:hover:not(.active){
+    background-color: #ddd;
+}
+
+li.stil1 a.active {
+    color: white;
+    background-color: #99b3e6;
+}
+
+ul.uebersicht {
+list-style-type: circle;
+overflow:hidden;
+margin-left: 30px;
+margin-top: -20px;
+font-size: 25px;
+}
+
+li.uebersicht {
+padding:20px;
+}
+
+/* Download-Button */
+
+.download {
+overflow:hidden;
+border: 6px solid #cccccc;
+border-radius:10px;
+background-color: #d9d9d9;
+width: 200px;
+}
+
+.download a{
+display:block;
+text-align:center;
+padding:14px 30px;
+text-decoration:none;
+}
+
+.download a:hover {
+background: #f3f3f3;
+}
+
+
+/* Footer */
+.footer {
+	font-size:15px;
+	font-variant: small-caps;
+	color: gray;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 	
 
 	
